@@ -1,6 +1,6 @@
 package Practise_Problems;
 
-public class ReveseOnlyLetters {
+public class ReveseOnlyLetters_TwoPointers {
 
     public static void main(String[] args) {
 
@@ -14,7 +14,8 @@ public class ReveseOnlyLetters {
 
             if(!Character.isLetter(ch[left])){
                 left++;
-            } else if (!Character.isLetter(ch[right])) {
+            }
+            else if (!Character.isLetter(ch[right])) {
 
                 right--;
 

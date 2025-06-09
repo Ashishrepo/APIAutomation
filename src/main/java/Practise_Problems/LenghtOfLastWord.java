@@ -31,7 +31,7 @@ public class LenghtOfLastWord {
 
 
         // With Trim
-                n=n.trim();
+        n=n.trim();
          char [] t= n.toCharArray();
         int count_new =0;
          for(int j=t.length-1;j>=0;j--){
