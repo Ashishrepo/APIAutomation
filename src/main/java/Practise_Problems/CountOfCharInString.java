@@ -9,7 +9,7 @@ public class CountOfCharInString {
 
     public static void main(String[] args) {
 
-        String s= "Ashish";
+        String s= "Ashish@!#!#";
         Map<Character, Integer> mp = new HashMap<Character,Integer>();
 
 
