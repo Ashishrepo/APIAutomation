@@ -21,7 +21,7 @@ public class Test1_LoginTEstAPI_Pojo {
         System.out.println(response.asPrettyString());
 
 
-        // Deserialize (JSON to JAva)
+        // Deserialize (JSON to JAVA)
         LoginResponse ls= response.as(LoginResponse.class);
         System.out.println(ls.getToken());
         System.out.println(ls.getId());

@@ -13,7 +13,7 @@ public class Test2_NewAccountCreationTest {
     @Test(description = "User Registration Test")
     public void createAccountTest(){
 
-        SignUpRequest signUpReq = new SignUpRequest.Builder()
+        SignUpRequest signUpReq = SignUpRequest.builder()
                 .username("Ash2025")
                 .firstname("Ashish")
                 .lastname("Jain")

@@ -21,7 +21,7 @@ public class Test5_UpdateProfileTest {
 
         System.out.println("----------------------------------------------------------");
 
-        UpdateProfileRequest updateProfileRequest=new UpdateProfileRequest.Builder()
+        UpdateProfileRequest updateProfileRequest= UpdateProfileRequest.builder()
                 .firstName("ayush1234")
                 .lastName("ayush1234")
                 .email("ayush1234@gmail.com")
