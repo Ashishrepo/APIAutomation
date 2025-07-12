@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Parallel Suite" parallel="tests" thread-count="2" >
+    <test name="Parallel Test Chrome">
+
+        <parameter name="url" value="https://www.orangehrm.com/"/>
+        <parameter name="browser" value="chrome"/>
+
+        <classes>
+
+            <class name="TesNGPractise.ParallelExecution_Test"></class>
+
+        </classes>
+    </test>
+
+    <test name="Parallel Test Edge">
+
+        <parameter name="url" value="https://www.orangehrm.com/"/>
+        <parameter name="browser" value="edge"/>
+
+        <classes>
+
+            <class name="TesNGPractise.ParallelExecution_Test"></class>
+
+        </classes>
+    </test>
+</suite>
