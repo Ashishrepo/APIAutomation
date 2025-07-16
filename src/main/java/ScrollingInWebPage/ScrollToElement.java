@@ -1,17 +1,15 @@
 package ScrollingInWebPage;
 
-import io.cucumber.java.et.Ja;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 
 import java.util.List;
-import java.util.Optional;
 
-public class Scroll {
+public class ScrollToElement {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
 
         WebDriverManager.chromedriver().setup();
 
@@ -32,16 +30,15 @@ public class Scroll {
 //        js.executeScript("arguments[0].scrollIntoView(true);",book);
 //        System.out.println(book.getText());
 
-        boolean found =false;
 
-        while(!found){
+
+        while(true){
 
             List<WebElement> ls= driver.findElements(By.xpath("//div[@class='book_display']//h3"));
 
 
              if(ls.stream().map(d->d.getText()).anyMatch(q->q.equalsIgnoreCase("Peter Pan"))){
                  System.out.println("********** Found **************");
-                 found=true;
                  break;
              }
 
@@ -53,9 +50,12 @@ public class Scroll {
 
             Actions ac= new Actions(driver);
             ac.sendKeys(Keys.END).perform();
+            Thread.sleep(2000);
 
 
         }
+
+        driver.quit();
 
 
     }
