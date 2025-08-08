@@ -1,0 +1,24 @@
+{
+  "company": "TechNova Solutions",
+  "employees": [
+    {
+      "id": 101,
+      "name": "Alice",
+      "role": "Developer",
+      "skills": ["Java", "Spring", "REST API"]
+    },
+    {
+      "id": 102,
+      "name": "Bob",
+      "role": "Designer",
+      "skills": ["Photoshop", "Illustrator", "UI/UX"]
+    },
+    {
+      "id": 103,
+      "name": "Charlie",
+      "role": "QA Engineer",
+      "skills": ["Selenium", "Postman", "JUnit"]
+    }
+  ],
+  "officeLocations": ["Bangalore", "New York", "London"]
+}

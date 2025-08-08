@@ -1,8 +1,6 @@
-import io.cucumber.java.et.Ja;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.interactions.Actions;
 
 import java.io.IOException;
 import java.nio.file.Files;
@@ -12,7 +10,7 @@ import java.util.Properties;
 
 public class DynamicTable {
 
-    public static void main(String[] args) throws IOException, InterruptedException {
+    public static void main(string_1[] args) throws IOException, InterruptedException {
 
         Properties prop = new Properties();
         prop.load(Files.newInputStream(Paths.get("TestData.properties")));

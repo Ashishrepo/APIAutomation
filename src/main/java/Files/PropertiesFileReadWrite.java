@@ -11,17 +11,17 @@ public class PropertiesFileReadWrite {
 
         Properties prop = new Properties();
 
-        prop.setProperty("EmpName", "Ashish Jain");
-        prop.setProperty("Employer", "GL");
-        prop.setProperty("Age", "31");
+        prop.setProperty("EmpName", "Eshan Jain");
+        prop.setProperty("Employer", "ABB");
+        prop.setProperty("Age", "34");
 
-        try {
+        try(BufferedWriter bwr = new BufferedWriter(new FileWriter(filePath))) {
 //            FileOutputStream fileOutputStream = new FileOutputStream(filePath);
 
-        FileWriter writer = new FileWriter(filePath);
+//        FileWriter writer = new FileWriter(filePath);
 
-            prop.store(writer, "Sample data in Prop file...");
-            writer.close();
+            prop.store(bwr, "Sample data in Prop file...");
+            bwr.close();
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -32,15 +32,14 @@ public class PropertiesFileReadWrite {
 
         Properties prop = new Properties();
 
-        try {
-            FileInputStream fileInputStream = new FileInputStream(path);
-            prop.load(fileInputStream);
+        try (BufferedReader bfr = new BufferedReader(new FileReader(path))){
+            prop.load(bfr);
 
             System.out.println(prop.getProperty("EmpName"));
             System.out.println(prop.getProperty("Employer"));
             System.out.println(prop.getProperty("Age"));
 
-            fileInputStream.close();
+            bfr.close();
 
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -50,7 +49,7 @@ public class PropertiesFileReadWrite {
 
     public static void main(String[] args) {
 
-        String filePath = System.getProperty("user.dir") + "/src/main/java/Files/example.properties";
+        String filePath = System.getProperty("user.dir") + "/src/main/java/Files/example11.properties";
         writeIntoProperty(filePath);
         readFromProperty(filePath);
 

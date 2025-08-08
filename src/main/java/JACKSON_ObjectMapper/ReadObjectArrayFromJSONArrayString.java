@@ -16,6 +16,7 @@ public class ReadObjectArrayFromJSONArrayString {
 
         Car[] car = mp.readValue(new File("src/main/java/JACKSON_ObjectMapper/dataArray.json"), Car[].class);
 
+        Arrays.stream(car).forEach(f-> System.out.println(f.getBrand()+"-->"+f.getDoors()));
 
 
     }

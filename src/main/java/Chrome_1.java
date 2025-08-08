@@ -4,7 +4,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 
 public class Chrome_1 {
 
-    public static void main(String[] args){
+    public static void main(string_1[] args){
 
 
         WebDriverManager.chromedriver().setup();

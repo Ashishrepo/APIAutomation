@@ -2,6 +2,7 @@ package Files;
 
 import lombok.extern.slf4j.Slf4j;
 
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.util.Scanner;
@@ -15,9 +16,9 @@ public class filesAction {
         File file = new File(filepath);
         try {
             if (file.createNewFile()) {
-                System.out.println("New File Created." + filepath);
+                System.out.println("New File Created-->" + file.getName());
             } else {
-                System.out.println("File already exist");
+                System.out.println("File already exist -->" + file.getName());
             }
         } catch (Exception e) {
             System.out.println(e.getMessage());
@@ -27,8 +28,9 @@ public class filesAction {
     public static void writeToFile(String filepath) {
         try {
             FileWriter writer = new FileWriter(filepath);
-            writer.write("Welcome to SDET-QA....");
-            writer.close();
+            BufferedWriter bwr= new BufferedWriter(writer);
+            bwr.write("Welcome to SDET-QA....");
+            bwr.close();
             System.out.println("Successfully wrote to file");
 
         } catch (Exception e) {

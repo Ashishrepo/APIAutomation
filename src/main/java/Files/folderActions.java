@@ -12,9 +12,10 @@ public class folderActions {
         if (!checkFolderExist(folderPath)) {
 
             file.mkdir();
+            System.out.println("new Folder created-->"+file.getName());
 
         } else {
-            System.out.println("Folder already exist");
+            System.out.println("Folder already exist -->"+file.getName());
         }
     }
 

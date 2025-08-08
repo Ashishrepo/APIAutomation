@@ -1,6 +1,6 @@
 public class c1 {
 
-    public static void main(String[] args){
+    public static void main(string_1[] args){
 
         String n= "ashish";
 

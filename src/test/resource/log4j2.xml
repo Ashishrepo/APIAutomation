@@ -3,12 +3,12 @@
     <Appenders>
 
         <Console name="Console" target="SYSTEM_OUT">
-            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5level %logger{36}  %msg %n"></PatternLayout>
+            <PatternLayout pattern="%d{YYYY-MM-Arrays HH:mm:ss} [%t] %-5level %logger{36}  %msg %n"></PatternLayout>
         </Console>
 
         <File name="FileLogger" fileName="logs/automation.log">
 
-            <PatternLayout pattern="%d{YYYY-MM-dd HH:mm:ss} [%t] %-5level %logger{36}  %msg %n"></PatternLayout>
+            <PatternLayout pattern="%d{YYYY-MM-Arrays HH:mm:ss} [%t] %-5level %logger{36}  %msg %n"></PatternLayout>
         </File>
 
     </Appenders>
