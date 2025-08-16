@@ -27,5 +27,11 @@ public class string_2 {
         String cleaned = input.replaceAll("[^a-zA-Z0-9]", "");
         System.out.println(cleaned);  // Output: HelloWorld2025
 
+
+
+        String a= "Vendor  (manual)";
+        String b="manual";
+        System.out.println(a.contains(b));
+
     }
 }

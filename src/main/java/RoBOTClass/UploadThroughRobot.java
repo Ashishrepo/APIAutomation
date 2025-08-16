@@ -34,7 +34,7 @@ public class UploadThroughRobot {
 
 
 //        solution #1 because DOM contains <input tag and argument Type=file
-//        driver.findElement(By.cssSelector("input#file-upload")).sendKeys("C:\\Users\\ashish.jain3\\Desktop\\imp.txt");
+        driver.findElement(By.cssSelector("input#file-upload")).sendKeys("C:\\Users\\ashish.jain3\\Desktop\\imp.txt");
 
 
         //solution2  - if we try to click on the element with Input Tag  ---> System throws InvalidArgumentException: invalid argument

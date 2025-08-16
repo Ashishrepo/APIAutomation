@@ -18,6 +18,7 @@ public class implementingClass extends ProjectRecord implements Emp1, Emp2{
 
     public static void main(String[] args) {
         implementingClass obj = new implementingClass();
+        Emp1 obj1 = new implementingClass();
 
         //abstrct methods
         obj.projectsEmp1();
@@ -41,5 +42,8 @@ public class implementingClass extends ProjectRecord implements Emp1, Emp2{
         //parent class
         obj.m();
         System.out.println(obj.projects);
+
+        System.out.println("*****************************");
+        obj1.projectsEmp1();
     }
 }

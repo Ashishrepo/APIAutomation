@@ -1,4 +1,4 @@
-package SELENium;
+package WINDOWS;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.By;
